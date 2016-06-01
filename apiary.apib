@@ -1,0 +1,51 @@
+FORMAT: 1A
+HOST: https://api.theandym.com
+
+# theandym-api
+
+This is an API allowing access to data on *theandym* (aka [Andy Macdonald](https://theandym.com)).
+
+## Biography [/bio]
+
+### Get Biography [GET]
+
+Get a copy of Andy's biography.
+
++ Response 200 (application/json)
+
+        [
+            {
+                "content": "I spend my days at Apiary helping to provide customers with amazing tooling for API development. Prior to that I was at Heroku working to make developers heroes and businesses successful. I've also lead a web development team, built a SaaS app, and run a digital design and development firm.\nOutside work I enjoy spending time with friends, seeing live music, and traveling.\nTo get in touch you can start by sending me an email, checking out my résumé, or finding me on Twitter — elsewhere I'm usually @theandym.",
+                "published_at": "2016-05-23T00:00:00.000Z"
+            }
+        ]
+
+## Social [/social]
+
+### List Social Media Profiles [GET]
+
+Get a list of Andy's social media profiles.
+
++ Response 200 (application/json)
+
+        [
+            {
+                "description": "Current Social Media Profiles",
+                "published_at": "2016-05-23T00:00:00.000Z",
+                "profiles": [
+                    {
+                        "site": "LinkedIn",
+                        "username": "theandym",
+                        "url": "https://www.linkedin.com/in/theandym"
+                    }, {
+                        "site": "Spotify",
+                        "username": "theandym",
+                        "url": "https://open.spotify.com/user/theandym"
+                    }, {
+                        "site": "Twitter",
+                        "username": "theandym",
+                        "url": "https://twitter.com/theandym"
+                    }
+                ]
+            }
+        ]
